@@ -1,0 +1,30 @@
+{
+  "name": "accordion",
+  "version": "1.0.0",
+  "description": "Accordion for schibsted",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyamone/accordion.git"
+  },
+  "author": "Lucas Yamone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyamone/accordion/issues"
+  },
+  "homepage": "https://github.com/lyamone/accordion#readme",
+  "dependencies": {
+    "concat": "^1.0.3",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0",
+    "npm": "^6.5.0",
+    "sass": "^1.15.2",
+    "suitcss-preprocessor": "^4.0.0",
+    "wrench": "^1.5.9"
+  }
+}

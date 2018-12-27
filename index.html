@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="dist/css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accordion</title>
+</head>
+<body>
+ 
+<div class="container">
+
+  <h1> Basic Accordion </h1>
+
+  <div id="basic-accordion"></div>
+
+  <h1> Customizable Accordion </h1>
+  <p> Configure your accordion </p>
+  <div class="custom-accordion-toolbar">
+    <span>
+      <label for="quantity">Number of sections</label>
+      <input 
+        type="number" 
+        name="quantity" 
+        id="custom-accordion-quantity" 
+        class="custom-accordion_btn_sections" 
+        min="1" 
+        max="10" 
+        value="3">
+    </span>
+    <span>
+      <button class="button button--default" id="custom-accordion-btn">Create Accordion</button>
+    </span>
+  </div> 
+  <div id="custom-accordion"></div>
+
+  <h1>ABC News Accordion</h1>
+
+  <div id="ajax-accordion"></div>
+</div>
+ <script  type="text/Javascript" src="dist/js/accordion.js"></script>
+</body>
+</html>
+
+
