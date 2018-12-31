@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+h1 {
+  font-size: 1.5em;
+  padding: 0.5em;
+  text-align: center;
+  font-weight: 300;
+  color: #444;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+
+.Accordion-container {
+  position: relative;
+  background-color: #fff; }
+  .Accordion-container dl {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+    .Accordion-container dl:after {
+      content: "";
+      display: block;
+      height: 1em;
+      width: 100%;
+      background-color: #2980b9; }
+  .Accordion-container dt > a {
+    text-align: center;
+    font-weight: 300;
+    padding: 2em;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: background-color 0.5s ease-in-out; }
+  .Accordion-container dd {
+    background-color: #fff;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-image: linear-gradient(to bottom, #444 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    .Accordion-container dd > p {
+      padding: 1em 2em 1em 2em; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 0 0 0; }
+
+.Accordion-title {
+  background-color: #3498db;
+  border-bottom: 1px solid #258cd1; }
+  .Accordion-title:before {
+    content: "+";
+    font-size: 1.5em;
+    line-height: 0.5em;
+    float: left;
+    transition: transform 0.3s ease-in-out; }
+  .Accordion-title:hover {
+    background-color: #2980b9; }
+  .Accordion-title.is-active {
+    background-color: #2980b9; }
+    .Accordion-title.is-active:before {
+      transform: rotate(-225deg); }
+
+.Accordion-section {
+  height: 0;
+  overflow: hidden; }
+  .Accordion-section.is-open {
+    height: auto;
+    animation-name: acc_in;
+    animation-duration: 0.65s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s; }
+  .Accordion-section.is-close {
+    animation-name: acc_out;
+    animation-duration: 0.75s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s; }
+
+@media all {
+  .Accordion-section {
+    transition: max-height 1s; } }
+
+@media screen and (min-width: 48em) {
+  .Accordion-section {
+    transition: max-height 0.5s; } }
+
+.anim_in {
+  animation-name: acc_in;
+  animation-duration: 0.65s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s; }
+
+.anim_out {
+  animation-name: acc_out;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s; }
+
+@keyframes acc_in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes acc_out {
+  0% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(0.8); } }
